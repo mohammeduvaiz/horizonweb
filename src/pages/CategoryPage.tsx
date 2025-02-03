@@ -18,7 +18,7 @@ const CategoryPage = () => {
 
   const handleBuyNow = (product: { name: string; price: string }) => {
     const message = `Hi, I'm interested in buying ${product.name} priced at ${product.price}`;
-    const whatsappUrl = `https://wa.me/+911234567890?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+918129438189?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
