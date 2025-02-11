@@ -93,85 +93,523 @@ export const categories = [
 // ];
 
 export const products = [
-  // Rackets - Astrox Series
-  {
-    id: 1,
-    name: "Yonex Astrox 100ZZ",
-    price: "₹22,990",
-    image: "https://www.yonex.com/media/catalog/product/a/s/astrox100zz_kurenai.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+
+   // I SERIES
+   {
+    id: 16,
+    name: "Yonex Astrox 27i",
+    price: "₹1,590",
+    image:"https://cdnmedia.racquets4u.com/media/iopt/catalog/product/cache/8f24f3f124e67ea1e49f457c6f2f1da7/8/0/8068_go_1613622247369.webp",
     category: "Rackets",
-    subcategory: "Astrox Series",
-    description: "Professional offensive racket with Rotational Generator System for maximum power and control",
+    subcategory: "I Series",
+    description: "Entry-level Astrox racket for beginners",
     specifications: {
       weight: "4U (83g)",
-      balance: "Head Heavy",
-      flexibility: "Stiff",
-      material: "H.M. Graphite, Tungsten, NAMD"
+      balance: "Head Light",
+      flexibility: "Medium",
+      material: "Graphite"
     }
   },
   {
-    id: 2,
-    name: "Yonex Astrox 99 Pro",
-    price: "₹19,990",
-    image: "https://www.yonex.com/media/catalog/product/a/x/ax99-pro_whitetiger.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    id: 17,
+    name: "Yonex Astrox 37i",
+    price: "₹1,690",
+    image:"https://scssports.in/cdn/shop/files/astrox37i1_1066x.jpg?v=1738220483",
     category: "Rackets",
-    subcategory: "Astrox Series",
-    description: "Professional racket designed for aggressive players seeking power and precision",
+    subcategory: "I Series",
+    description: "Entry-level Astrox racket with improved control",
     specifications: {
       weight: "4U (83g)",
-      balance: "Head Heavy",
-      flexibility: "Stiff",
-      material: "H.M. Graphite, NAMD"
+      balance: "Head Light",
+      flexibility: "Medium",
+      material: "Graphite"
     }
   },
   {
-    id: 3,
-    name: "Yonex Astrox 88D Pro",
-    price: "₹18,990",
-    image: "https://www.yonex.com/media/catalog/product/3/a/3ax88d-p_076-1_02.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    id: 18,
+    name: "Yonex Astrox 45i",
+    price: "₹1,690",
+    image:"https://m.media-amazon.com/images/I/41kQSrEpXEL._SX679_.jpg",
     category: "Rackets",
-    subcategory: "Astrox Series",
-    description: "Professional doubles racket offering quick response and excellent control",
+    subcategory: "I Series",
+    description: "Balanced Astrox racket for developing players",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Even",
+      flexibility: "Medium",
+      material: "Graphite"
+    }
+  },
+  {
+    id: 19,
+    name: "Yonex Astrox 43i",
+    price: "₹1,690",
+    image:"https://scssports.in/cdn/shop/files/yonex---astrox-lite-43i_1066x.jpg?v=1738233394",
+    category: "Rackets",
+    subcategory: "I Series",
+    description: "Versatile Astrox racket for all-round play",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Even",
+      flexibility: "Medium",
+      material: "Graphite"
+    }
+  },
+  {
+    id: 20,
+    name: "Yonex Voltric 47i",
+    price: "₹1,690",
+    image:"https://m.media-amazon.com/images/I/61d0bPShEXL._SX679_.jpg",
+    category: "Rackets",
+    subcategory: "I Series",
+    description: "Power-focused Voltric racket for beginners",
     specifications: {
       weight: "4U (83g)",
       balance: "Head Heavy",
       flexibility: "Medium",
-      material: "H.M. Graphite, VOLUME CUT RESIN"
+      material: "Graphite"
+    }
+  },
+  {
+    id: 21,
+    name: "Yonex Voltric 40i",
+    price: "₹1,680",
+    image:"https://sportonixsports.in/cdn/shop/products/Yonex_Voltric_40i_1024x1024.jpg?v=1710348213",
+    category: "Rackets",
+    subcategory: "I Series",
+    description: "Entry-level Voltric racket for developing players",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Medium",
+      material: "Graphite"
     }
   },
 
-  // Rackets - Nanoflare Series
+  // PLAY SERIES
   {
-    id: 4,
-    name: "Yonex Nanoflare 800 Pro",
-    price: "₹20,990",
-    image: "https://www.yonex.com/media/catalog/product/a/l/all_nf-800p_269-1.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    id: 22,
+    name: "Yonex Astrox 77 Play",
+    price: "₹2,480",
+    image:"https://www.yonex.com/media/catalog/product/a/x/ax77-pl.jpg?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Nanoflare Series",
-    description: "Ultra-lightweight racket designed for fast-paced gameplay and quick maneuverability",
+    subcategory: "Play Series",
+    description: "Intermediate Astrox racket for advancing players",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Medium",
+      material: "Graphite"
+    }
+  },
+  {
+    id: 23,
+    name: "Yonex Astrox 88 Play",
+    price: "₹3,100",
+    image:"https://www.yonex.com/media/catalog/product/3/a/3ax88-pl_076_1_02.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Play Series",
+    description: "Advanced level Astrox racket for competitive play",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Stiff",
+      material: "Graphite"
+    }
+  },
+  {
+    id: 24,
+    name: "Yonex Astrox 99 Play",
+    price: "₹3,190",
+    image:"https://www.yonex.com/media/catalog/product/a/x/ax99-pl_whitetiger.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Play Series",
+    description: "High-performance Astrox racket for competitive players",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Stiff",
+      material: "Graphite"
+    }
+  },
+  {
+    id: 25,
+    name: "Yonex Arcsaber 11 Play",
+    price: "₹3,200",
+    image:"https://www.yonex.com/media/catalog/product/a/r/arc11-pl.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Play Series",
+    description: "Control-oriented Arcsaber racket for precise play",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Even",
+      flexibility: "Medium",
+      material: "Graphite"
+    }
+  },
+  {
+    id: 26,
+    name: "Yonex Arcsaber 7 Play",
+    price: "₹2,990",
+    image:"https://www.yonex.com/media/catalog/product/a/r/arc7-pl_grayyellow.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Play Series",
+    description: "Balanced Arcsaber racket for all-round performance",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Even",
+      flexibility: "Medium",
+      material: "Graphite"
+    }
+  },
+  {
+    id: 27,
+    name: "Yonex Nanoflare 800 Play",
+    price: "₹2,990",
+    image:"https://www.yonex.com/media/catalog/product/i/n/int_nf-800pl_269-1.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Play Series",
+    description: "Speed-oriented Nanoflare racket for fast gameplay",
     specifications: {
       weight: "5U (78g)",
       balance: "Head Light",
       flexibility: "Medium",
-      material: "H.M. Graphite, TORAYCA M40X"
+      material: "Graphite"
+    }
+  },
+
+  // GAME SERIES
+  {
+    id: 28,
+    name: "Yonex Astrox 88D Game",
+    price: "₹5,890",
+    image:"https://www.yonex.com/media/catalog/product/3/a/3ax88d-g_076-1_02.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Game Series",
+    description: "Professional doubles-focused Astrox racket",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Stiff",
+      material: "H.M. Graphite"
     }
   },
   {
-    id: 5,
-    name: "Yonex Nanoflare 700 Pro",
-    price: "₹16,990",
-    image: "https://www.yonex.com/media/catalog/product/a/l/all_nf-700p_339-1_2.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    id: 29,
+    name: "Yonex Astrox 99 Game",
+    price: "₹4,990",
+    image:"https://www.yonex.com/media/catalog/product/a/x/ax99-g_whitetiger.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Nanoflare Series",
-    description: "Speed-oriented racket with excellent repulsion power",
+    subcategory: "Game Series",
+    description: "High-end Astrox racket for competitive play",
     specifications: {
       weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Stiff",
+      material: "H.M. Graphite"
+    }
+  },
+  {
+    id: 30,
+    name: "Yonex Astrox 100 Game",
+    price: "₹6,100",
+    image:"https://www.yonex.com/media/catalog/product/a/s/astrox100game.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Game Series",
+    description: "Premium Astrox racket for professional play",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Extra Stiff",
+      material: "H.M. Graphite"
+    }
+  },
+  {
+    id: 31,
+    name: "Yonex Nanoflare 700 Game",
+    price: "₹5,990",
+    image:"https://www.yonex.com/media/catalog/product/a/l/all_nf-700g_339-1_2_1.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Game Series",
+    description: "Advanced Nanoflare racket for speed and control",
+    specifications: {
+      weight: "5U (78g)",
       balance: "Head Light",
       flexibility: "Medium",
       material: "H.M. Graphite"
     }
   },
-
+  {
+    id: 32,
+    name: "Yonex Nanoflare 1000 Game",
+    price: "₹6,190",
+    image:"https://www.yonex.com/media/catalog/product/n/a/nanoflare_1000game.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Game Series",
+    description: "Premium Nanoflare racket for professional players",
+    specifications: {
+      weight: "5U (78g)",
+      balance: "Head Light",
+      flexibility: "Stiff",
+      material: "H.M. Graphite"
+    }
+  },
+  {
+    id: 33,
+    name: "Yonex Muscle Power 22 Lite",
+    price: "₹1,990",
+    image:"https://cdnmedia.racquets4u.com/media/iopt/catalog/product/cache/8f24f3f124e67ea1e49f457c6f2f1da7/y/o/yonex-muscle-power-22-lite-badminton-racquet-strung.webp",
+    category: "Rackets",
+    subcategory: "Game Series",
+    description: "Lightweight power-focused racket for beginners",
+    specifications: {
+      weight: "5U (78g)",
+      balance: "Head Light",
+      flexibility: "Medium",
+      material: "Graphite"
+    }
+  },
+  {
+    id: 34,
+    name: "Yonex Muscle Power 29 Lite",
+    price: "₹2,490",
+    image:"https://cdnmedia.racquets4u.com/media/iopt/catalog/product/cache/8f24f3f124e67ea1e49f457c6f2f1da7/b/a/badminton-racquet-yonex-mp-29_23.webp",
+    category: "Rackets",
+    subcategory: "Game Series",
+    description: "Balanced Muscle Power racket for developing players",
+    specifications: {
+      weight: "5U (78g)",
+      balance: "Even",
+      flexibility: "Medium",
+      material: "Graphite"
+    }
+  },
+  {
+    id: 35,
+    name: "Yonex Muscle Power 33 Lite",
+    price: "₹2,490",
+    image:"https://cdnmedia.racquets4u.com/media/iopt/catalog/product/cache/8f24f3f124e67ea1e49f457c6f2f1da7/y/o/yonex-muscle-power-33-light-badminton-racquet-strung-sky-blue.webp",
+    category: "Rackets",
+    subcategory: "Game Series",
+    description: "Advanced Muscle Power racket for improved control",
+    specifications: {
+      weight: "5U (78g)",
+      balance: "Even",
+      flexibility: "Medium",
+      material: "Graphite"
+    }
+  },
+  {
+    id: 36,
+    name: "Yonex Astrox Nextage",
+    price: "₹6,290",
+    image:"https://www.yonex.com/media/catalog/product/a/x/ax-nx2223.png?quality=80&fit=bounds&height=819&width=600&canvas=600:819",
+    category: "Rackets",
+    subcategory: "Game Series",
+    description: "Next-gen Astrox racket with latest technology",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Stiff",
+      material: "H.M. Graphite"
+    }
+  },
+  {
+    id: 37,
+    name: "Yonex Nanoflare Nextage",
+    price: "₹6,290",
+    image:"https://www.yonex.com/media/catalog/product/i/n/int_nf-ns_103-1_1.png?quality=80&fit=bounds&height=819&width=600&canvas=600:819",
+    category: "Rackets",
+    subcategory: "Game Series",
+    description: "Next-gen Nanoflare racket with advanced features",
+    specifications: {
+      weight: "5U (78g)",
+      balance: "Head Light",
+      flexibility: "Stiff",
+      material: "H.M. Graphite"
+    }
+  },
+  {
+    id: 38,
+    name: "Yonex Astrox 88S",
+    price: "₹4,990",
+    image:"https://www.yonex.com/media/catalog/product/3/a/3ax88s-g_417-1_02.png?quality=80&fit=bounds&height=819&width=600&canvas=600:819",
+    category: "Rackets",
+    subcategory: "Game Series",
+    description: "Singles-focused Astrox racket for competitive play",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Stiff",
+      material: "H.M. Graphite"
+    }
+  },
+  {
+    id: 39,
+    name: "Yonex Astrox 1DG",
+    price: "₹3,390",
+    image:"https://cdnmedia.racquets4u.com/media/iopt/catalog/product/cache/8f24f3f124e67ea1e49f457c6f2f1da7/y/o/yonex-astrox-1-dg-badminton-racquet-strung.webp",
+    category: "Rackets",
+    subcategory: "Game Series",
+    description: "Dynamic Astrox racket for aggressive play",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Medium",
+      material: "Graphite"
+    }
+  },
+  {
+    id: 40,
+    name: "Yonex Astrox 3DG",
+    price: "₹3,490",
+    image:"https://cdnmedia.racquets4u.com/media/iopt/catalog/product/cache/8f24f3f124e67ea1e49f457c6f2f1da7/y/o/yonex-astrox-3-dg-badminton-racquet-strung_1.webp",
+    category: "Rackets",
+    subcategory: "Game Series",
+    description: "Enhanced Astrox racket for powerful shots",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Medium",
+      material: "Graphite"
+    }
+  },
+  {
+    id: 41,
+    name: "Yonex Arcsaber Ability",
+    price: "₹2,790",
+    image:"https://m.media-amazon.com/images/I/61zpeBQlqzL.jpg",
+    category: "Rackets",
+    subcategory: "Game Series",
+    description: "Control-oriented Arcsaber racket for precise play",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Even",
+      flexibility: "Medium",
+      material: "Graphite"
+    }
+  },
+  // Rackets - Astrox Series
+  {
+    id: 49,
+    name: "Yonex Arcsaber 7 Pro",
+    price: "₹10,200",
+    image: "https://www.yonex.com/media/catalog/product/a/r/arc7-p.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Arcsaber Series",
+    description: "Professional all-round racket with exceptional control and precision",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Even",
+      flexibility: "Medium",
+      material: "H.M. Graphite, NANOMESH NEO"
+    }
+  },
+  {
+    id: 50,
+    name: "Yonex Astrox 77 Pro",
+    price: "₹10,400",
+    image: "https://www.yonex.com/media/catalog/product/a/x/ax77-p_.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Astrox Series",
+    description: "Professional offensive racket with enhanced power and control",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Stiff",
+      material: "H.M. Graphite, NANOMESH NEO"
+    }
+  },
+  {
+    id: 51,
+    name: "Yonex Duora Strike",
+    price: "₹12,200",
+    image: "https://www.yonex.com/media/catalog/product/d/u/duo-zs.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Duora Series",
+    description: "Dual-sided racket offering unique forehand and backhand characteristics",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Stiff",
+      material: "H.M. Graphite, NANOMESH NEO"
+    }
+  },
+  {
+    id: 52,
+    name: "Yonex Astrox 99 Pro",
+    price: "₹13,900",
+    image: "https://www.yonex.com/media/catalog/product/a/x/ax99-pro_whitetiger.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Astrox Series",
+    description: "Professional high-end racket for aggressive attacking play",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Extra Stiff",
+      material: "H.M. Graphite, VOLUME CUT RESIN, NAMD"
+    }
+  },
+  {
+    id: 53,
+    name: "Yonex Nanoflare 1000Z",
+    price: "₹15,200",
+    image: "https://www.yonex.com/media/catalog/product/n/a/nanoflare_1000_z.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Nanoflare Series",
+    description: "Premium professional racket optimized for speed and quick attacks",
+    specifications: {
+      weight: "5U (78g)",
+      balance: "Head Light",
+      flexibility: "Stiff",
+      material: "H.M. Graphite, TORAYCA M40X, SUPER HMG"
+    }
+  },
+  {
+    id: 54,
+    name: "Yonex Astrox 100ZZ",
+    price: "₹14,900",
+    image: "https://www.yonex.com/media/catalog/product/a/s/astrox100zz_kurenai.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Astrox Series",
+    description: "Top-tier professional racket with maximum power and control",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Extra Stiff",
+      material: "H.M. Graphite, VOLUME CUT RESIN, NAMD"
+    }
+  },
+  {
+    id: 55,
+    name: "Yonex Astrox 88D Pro",
+    price: "₹12,900",
+    image: "https://www.yonex.com/media/catalog/product/3/a/3ax88d-p_076-1_02.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Astrox Series",
+    description: "Professional doubles-specialized racket for quick exchanges",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Stiff",
+      material: "H.M. Graphite, VOLUME CUT RESIN"
+    }
+  },
+  {
+    id: 56,
+    name: "Yonex Astrox 88S Pro",
+    price: "₹12,800",
+    image: "https://www.yonex.com/media/catalog/product/3/a/3ax88s-p_417-1_02.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Rackets",
+    subcategory: "Astrox Series",
+    description: "Professional singles-specialized racket for powerful attacks",
+    specifications: {
+      weight: "4U (83g)",
+      balance: "Head Heavy",
+      flexibility: "Stiff",
+      material: "H.M. Graphite, VOLUME CUT RESIN"
+    }
+  },
   // Shoes
   {
     id: 6,
@@ -240,13 +678,73 @@ export const products = [
 
   // Shuttlecocks
   {
-    id: 10,
-    name: "Yonex Aerosensa 30",
-    price: "₹3,990",
-    image: "https://www.yonex.com/media/catalog/product/a/e/aerosensa_30.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    id: 42,
+    name: "Yonex Mavis 10",
+    price: "₹550",
+    image: "https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_2,f_auto,fl_progressive//cultgear-content/ukVeh6N9KQykVZwP9SsgmmnG",
+    category: "Shuttlecocks",
+    subcategory: "Training Grade",
+    description: "Entry-level nylon shuttlecocks for practice",
+    specifications: {
+      type: "Nylon",
+      speed: "Medium",
+      durability: "Standard",
+      quantity: "6 shuttlecocks per tube"
+    }
+  },
+  {
+    id: 43,
+    name: "Yonex Mavis 200i",
+    price: "₹490",
+    image: "https://cdnmedia.racquets4u.com/media/iopt/catalog/product/cache/8f24f3f124e67ea1e49f457c6f2f1da7/y/o/yonex-mavis-200i-badminton-shuttlecock-green-yellow.webp",
+    category: "Shuttlecocks",
+    subcategory: "Training Grade",
+    description: "Durable practice shuttlecocks with consistent flight",
+    specifications: {
+      type: "Nylon",
+      speed: "Medium",
+      durability: "Enhanced",
+      quantity: "6 shuttlecocks per tube"
+    }
+  },
+  {
+    id: 44,
+    name: "Yonex Mavis 350",
+    price: "₹1,250",
+    image: "https://cdnmedia.racquets4u.com/media/iopt/catalog/product/cache/8f24f3f124e67ea1e49f457c6f2f1da7/b/a/badminton-shuttlecock-mavis-350_18.webp",
+    category: "Shuttlecocks",
+    subcategory: "Training Grade",
+    description: "Premium nylon shuttlecocks with superior durability",
+    specifications: {
+      type: "Nylon",
+      speed: "Medium",
+      durability: "High",
+      quantity: "6 shuttlecocks per tube"
+    }
+  },
+  {
+    id: 45,
+    name: "Yonex Mavis 350i",
+    price: "₹990",
+    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shuttle/9/i/x/-original-imagxqk6zvfm2yrb.jpeg?q=70&crop=false",
+    category: "Shuttlecocks",
+    subcategory: "Training Grade",
+    description: "High-quality training shuttlecocks with excellent flight stability",
+    specifications: {
+      type: "Nylon",
+      speed: "Medium",
+      durability: "High",
+      quantity: "6 shuttlecocks per tube"
+    }
+  },
+  {
+    id: 46,
+    name: "Yonex AS2",
+    price: "₹2,150",
+    image: "https://www.yonex.com/media/catalog/product/a/e/aerosensa_20.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Shuttlecocks",
     subcategory: "Tournament Grade",
-    description: "Premium tournament grade feather shuttlecocks",
+    description: "Tournament-grade feather shuttlecocks for competitive play",
     specifications: {
       type: "Feather",
       speed: "Medium-Fast",
@@ -255,21 +753,35 @@ export const products = [
     }
   },
   {
-    id: 11,
-    name: "Yonex Mavis 350",
-    price: "₹990",
-    image: "https://www.yonex.com/media/catalog/product/m/a/mavis350_1.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    id: 47,
+    name: "Yonex TR",
+    price: "₹1,600",
+    image: "https://www.yonex.com/media/catalog/product/a/e/aeroclub_tr.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Shuttlecocks",
     subcategory: "Training Grade",
-    description: "Durable nylon shuttlecocks for training",
+    description: "Training-grade feather shuttlecocks for practice sessions",
     specifications: {
-      type: "Nylon",
+      type: "Feather",
       speed: "Medium",
-      durability: "High",
-      quantity: "6 shuttlecocks per tube"
+      durability: "Training Grade",
+      quantity: "12 shuttlecocks per tube"
     }
   },
-
+  {
+    id: 48,
+    name: "Yonex AS10",
+    price: "₹2,850",
+    image: "https://www.yonex.com/media/catalog/product/a/e/aerosensa_10.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    category: "Shuttlecocks",
+    subcategory: "Tournament Grade",
+    description: "Premium tournament-grade feather shuttlecocks",
+    specifications: {
+      type: "Feather",
+      speed: "Fast",
+      durability: "Tournament Grade",
+      quantity: "12 shuttlecocks per tube"
+    }
+  },
   // Kit Bags
   {
     id: 12,
