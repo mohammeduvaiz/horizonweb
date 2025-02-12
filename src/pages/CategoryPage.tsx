@@ -30,6 +30,11 @@ const CategoryPage = () => {
   ];
 
   useEffect(() => {
+    // Reset price range when category changes
+    setPriceRange('all');
+  }, [categoryName]);
+
+  useEffect(() => {
     let filtered = products.filter(
       product => product.category.toLowerCase() === categoryName.toLowerCase()
     );

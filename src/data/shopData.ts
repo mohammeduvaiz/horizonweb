@@ -191,93 +191,206 @@ export const products = [
     id: 22,
     name: "Yonex Astrox 77 Play",
     price: "₹2,480",
-    image:"https://www.yonex.com/media/catalog/product/a/x/ax77-pl.jpg?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    image: "https://www.yonex.com/media/catalog/product/a/x/ax77-pl.jpg?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Play Series",
+    subcategory: "Astrox",
+    model: "Play Series",
     description: "Intermediate Astrox racket for advancing players",
     specifications: {
-      weight: "4U (83g)",
-      balance: "Head Heavy",
-      flexibility: "Medium",
-      material: "Graphite"
+        weight: {
+            "4U": {
+                weight: "83g (Average)",
+                gripSizes: ["G5", "G6"],
+                stringTension: "20 - 28 lbs"
+            }
+        },
+        construction: {
+            frame: "Graphite",
+            shaft: "Graphite"
+        },
+        properties: {
+            flex: "Hi-Flex",
+            balance: "Head Heavy",
+            length: "10 mm longer"
+        },
+        stringingRecommendation: {
+            controlPlayers: "AEROBITE",
+            hardHitters: "EXBOLT65"
+        },
+        manufacturing: {
+            itemCode: "AX77-PL"
+        },
+        colors: ["High Orange"]
     }
-  },
-  {
+},
+{
     id: 23,
     name: "Yonex Astrox 88 Play",
     price: "₹3,100",
-    image:"https://www.yonex.com/media/catalog/product/3/a/3ax88-pl_076_1_02.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    image: "https://www.yonex.com/media/catalog/product/3/a/3ax88-pl_076_1_02.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Play Series",
+    subcategory: "Astrox",
+    model: "Play Series",
     description: "Advanced level Astrox racket for competitive play",
     specifications: {
-      weight: "4U (83g)",
-      balance: "Head Heavy",
-      flexibility: "Stiff",
-      material: "Graphite"
+        weight: {
+            "4U": {
+                weight: "83g (Average)",
+                gripSizes: ["G5"],
+                stringTension: "20 - 28 lbs"
+            }
+        },
+        construction: {
+            frame: "Graphite",
+            shaft: "Graphite"
+        },
+        properties: {
+            flex: "Medium",
+            balance: "Head Heavy",
+            length: "10 mm longer"
+        },
+        manufacturing: {
+            itemCode: "3AX88-PL"
+        },
+        colors: ["Black / Silver"]
     }
-  },
-  {
+},
+{
     id: 24,
     name: "Yonex Astrox 99 Play",
     price: "₹3,190",
-    image:"https://www.yonex.com/media/catalog/product/a/x/ax99-pl_whitetiger.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    image: "https://www.yonex.com/media/catalog/product/a/x/ax99-pl_whitetiger.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Play Series",
+    subcategory: "Astrox",
+    model: "Play Series",
     description: "High-performance Astrox racket for competitive players",
     specifications: {
-      weight: "4U (83g)",
-      balance: "Head Heavy",
-      flexibility: "Stiff",
-      material: "Graphite"
+        weight: {
+            "4U": {
+                weight: "83g (Average)",
+                gripSizes: ["G5", "G6"],
+                stringTension: "20 - 28 lbs"
+            }
+        },
+        construction: {
+            frame: "Graphite",
+            shaft: "Graphite"
+        },
+        properties: {
+            flex: "Medium",
+            balance: "Head Heavy"
+        },
+        stringingRecommendation: {
+            controlPlayers: "AEROBITE",
+            hardHitters: "BG66 FORCE"
+        },
+        manufacturing: {
+            itemCode: "AX99-PL"
+        },
+        colors: ["White Tiger", "Cherry Sunburst"]
     }
-  },
-  {
+},
+{
     id: 25,
     name: "Yonex Arcsaber 11 Play",
     price: "₹3,200",
-    image:"https://www.yonex.com/media/catalog/product/a/r/arc11-pl.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    image: "https://www.yonex.com/media/catalog/product/a/r/arc11-pl.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Play Series",
+    subcategory: "Arcsaber",
+    model: "Play Series",
     description: "Control-oriented Arcsaber racket for precise play",
     specifications: {
-      weight: "4U (83g)",
-      balance: "Even",
-      flexibility: "Medium",
-      material: "Graphite"
+        weight: {
+            "4U": {
+                weight: "83g (Average)",
+                gripSizes: ["G5", "G6"],
+                stringTension: "19 - 27 lbs"
+            }
+        },
+        construction: {
+            frame: "Graphite",
+            shaft: "Graphite"
+        },
+        properties: {
+            flex: "Medium",
+            balance: "Even",
+            length: "10 mm longer"
+        },
+        manufacturing: {
+            itemCode: "ARC11-PL"
+        },
+        colors: ["Grayish Pearl"]
     }
-  },
-  {
+},
+{
     id: 26,
     name: "Yonex Arcsaber 7 Play",
     price: "₹2,990",
-    image:"https://www.yonex.com/media/catalog/product/a/r/arc7-pl_grayyellow.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    image: "https://www.yonex.com/media/catalog/product/a/r/arc7-pl_grayyellow.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Play Series",
+    subcategory: "Arcsaber",
+    model: "Play Series",
     description: "Balanced Arcsaber racket for all-round performance",
     specifications: {
-      weight: "4U (83g)",
-      balance: "Even",
-      flexibility: "Medium",
-      material: "Graphite"
+        weight: {
+            "4U": {
+                weight: "83g (Average)",
+                gripSizes: ["G5", "G6"],
+                stringTension: "19 - 27 lbs"
+            }
+        },
+        construction: {
+            frame: "Graphite",
+            shaft: "Graphite",
+            joint: "Built-in T-Joint, T-ANCHOR"
+        },
+        properties: {
+            flex: "Hi-Flex",
+            balance: "Even",
+            length: "10 mm longer"
+        },
+        stringingRecommendation: {
+            controlPlayers: "EXBOLT 63",
+            hardHitters: "EXBOLT 65"
+        },
+        manufacturing: {
+            itemCode: "ARC7-PL"
+        },
+        colors: ["Gray / Yellow"]
     }
-  },
-  {
+},
+{
     id: 27,
     name: "Yonex Nanoflare 800 Play",
     price: "₹2,990",
-    image:"https://www.yonex.com/media/catalog/product/i/n/int_nf-800pl_269-1.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
+    image: "https://www.yonex.com/media/catalog/product/i/n/int_nf-800pl_269-1.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Play Series",
+    subcategory: "Nanoflare",
+    model: "Play Series",
     description: "Speed-oriented Nanoflare racket for fast gameplay",
     specifications: {
-      weight: "5U (78g)",
-      balance: "Head Light",
-      flexibility: "Medium",
-      material: "Graphite"
+        weight: {
+            "4U": {
+                weight: "83g (Average)",
+                gripSizes: ["G5", "G6"],
+                stringTension: "20 - 28 lbs"
+            }
+        },
+        construction: {
+            frame: "Graphite",
+            shaft: "Graphite"
+        },
+        properties: {
+            flex: "Medium",
+            balance: "Head Light",
+            length: "10 mm longer"
+        },
+        manufacturing: {
+            itemCode: "NF-800PL"
+        },
+        colors: ["Deep Green"]
     }
-  },
-
+},
   // GAME SERIES
   {
     id: 28,
@@ -285,7 +398,8 @@ export const products = [
     price: "₹5,890",
     image:"https://www.yonex.com/media/catalog/product/3/a/3ax88d-g_076-1_02.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Game Series",
+    subcategory: "Astrox",
+    model:"Game Series",
     description: "Professional doubles-focused Astrox racket",
     specifications: {
       weight: "4U (83g)",
@@ -300,7 +414,8 @@ export const products = [
     price: "₹4,990",
     image:"https://www.yonex.com/media/catalog/product/a/x/ax99-g_whitetiger.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Game Series",
+    subcategory: "Astrox",
+    model:"Game Series",
     description: "High-end Astrox racket for competitive play",
     specifications: {
       weight: "4U (83g)",
@@ -315,7 +430,8 @@ export const products = [
     price: "₹6,100",
     image:"https://www.yonex.com/media/catalog/product/a/s/astrox100game.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Game Series",
+    subcategory: "Astrox",
+    model:"Game Series",
     description: "Premium Astrox racket for professional play",
     specifications: {
       weight: "4U (83g)",
@@ -330,7 +446,8 @@ export const products = [
     price: "₹5,990",
     image:"https://www.yonex.com/media/catalog/product/a/l/all_nf-700g_339-1_2_1.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Game Series",
+    subcategory: "Nanoflare",
+    model:"Game Series",
     description: "Advanced Nanoflare racket for speed and control",
     specifications: {
       weight: "5U (78g)",
@@ -345,7 +462,8 @@ export const products = [
     price: "₹6,190",
     image:"https://www.yonex.com/media/catalog/product/n/a/nanoflare_1000game.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Game Series",
+    subcategory: "Nanoflare",
+    model:"Game Series",
     description: "Premium Nanoflare racket for professional players",
     specifications: {
       weight: "5U (78g)",
@@ -360,7 +478,8 @@ export const products = [
     price: "₹1,990",
     image:"https://cdnmedia.racquets4u.com/media/iopt/catalog/product/cache/8f24f3f124e67ea1e49f457c6f2f1da7/y/o/yonex-muscle-power-22-lite-badminton-racquet-strung.webp",
     category: "Rackets",
-    subcategory: "Game Series",
+    subcategory: "Muscle Power",
+    model:"Lite Series",
     description: "Lightweight power-focused racket for beginners",
     specifications: {
       weight: "5U (78g)",
@@ -375,7 +494,8 @@ export const products = [
     price: "₹2,490",
     image:"https://cdnmedia.racquets4u.com/media/iopt/catalog/product/cache/8f24f3f124e67ea1e49f457c6f2f1da7/b/a/badminton-racquet-yonex-mp-29_23.webp",
     category: "Rackets",
-    subcategory: "Game Series",
+    subcategory: "Muscle Power",
+    model:"Lite Series",
     description: "Balanced Muscle Power racket for developing players",
     specifications: {
       weight: "5U (78g)",
@@ -390,7 +510,8 @@ export const products = [
     price: "₹2,490",
     image:"https://cdnmedia.racquets4u.com/media/iopt/catalog/product/cache/8f24f3f124e67ea1e49f457c6f2f1da7/y/o/yonex-muscle-power-33-light-badminton-racquet-strung-sky-blue.webp",
     category: "Rackets",
-    subcategory: "Game Series",
+    subcategory: "Muscle Power",
+    model:"Lite Series",
     description: "Advanced Muscle Power racket for improved control",
     specifications: {
       weight: "5U (78g)",
@@ -405,7 +526,8 @@ export const products = [
     price: "₹6,290",
     image:"https://www.yonex.com/media/catalog/product/a/x/ax-nx2223.png?quality=80&fit=bounds&height=819&width=600&canvas=600:819",
     category: "Rackets",
-    subcategory: "Game Series",
+    subcategory: "Astrox",
+    model:"Nextage Series",
     description: "Next-gen Astrox racket with latest technology",
     specifications: {
       weight: "4U (83g)",
@@ -420,10 +542,11 @@ export const products = [
     price: "₹6,290",
     image:"https://www.yonex.com/media/catalog/product/i/n/int_nf-ns_103-1_1.png?quality=80&fit=bounds&height=819&width=600&canvas=600:819",
     category: "Rackets",
-    subcategory: "Game Series",
+    subcategory: "Nanoflare",
+    model:"Nextage Series",
     description: "Next-gen Nanoflare racket with advanced features",
     specifications: {
-      weight: "5U (78g)",
+      weight: "4U (78g)",
       balance: "Head Light",
       flexibility: "Stiff",
       material: "H.M. Graphite"
@@ -435,7 +558,8 @@ export const products = [
     price: "₹4,990",
     image:"https://www.yonex.com/media/catalog/product/3/a/3ax88s-g_417-1_02.png?quality=80&fit=bounds&height=819&width=600&canvas=600:819",
     category: "Rackets",
-    subcategory: "Game Series",
+    subcategory: "Astrox",
+    model:"Play Series",
     description: "Singles-focused Astrox racket for competitive play",
     specifications: {
       weight: "4U (83g)",
@@ -450,7 +574,8 @@ export const products = [
     price: "₹3,390",
     image:"https://cdnmedia.racquets4u.com/media/iopt/catalog/product/cache/8f24f3f124e67ea1e49f457c6f2f1da7/y/o/yonex-astrox-1-dg-badminton-racquet-strung.webp",
     category: "Rackets",
-    subcategory: "Game Series",
+    subcategory: "Astrox",
+    model:"DG Series",
     description: "Dynamic Astrox racket for aggressive play",
     specifications: {
       weight: "4U (83g)",
@@ -465,7 +590,8 @@ export const products = [
     price: "₹3,490",
     image:"https://cdnmedia.racquets4u.com/media/iopt/catalog/product/cache/8f24f3f124e67ea1e49f457c6f2f1da7/y/o/yonex-astrox-3-dg-badminton-racquet-strung_1.webp",
     category: "Rackets",
-    subcategory: "Game Series",
+    subcategory: "Astrox",
+    model:"DG Series",
     description: "Enhanced Astrox racket for powerful shots",
     specifications: {
       weight: "4U (83g)",
@@ -480,7 +606,8 @@ export const products = [
     price: "₹2,790",
     image:"https://m.media-amazon.com/images/I/61zpeBQlqzL.jpg",
     category: "Rackets",
-    subcategory: "Game Series",
+    subcategory: "Arcsaber",
+    model:"Ability Series",
     description: "Control-oriented Arcsaber racket for precise play",
     specifications: {
       weight: "4U (83g)",
@@ -496,118 +623,328 @@ export const products = [
     price: "₹10,200",
     image: "https://www.yonex.com/media/catalog/product/a/r/arc7-p.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Arcsaber Series",
+    subcategory: "Arcsaber",
+    model: "Pro Series",
     description: "Professional all-round racket with exceptional control and precision",
     specifications: {
-      weight: "4U (83g)",
-      balance: "Even",
-      flexibility: "Medium",
-      material: "H.M. Graphite, NANOMESH NEO"
+        weight: {
+            "4U": {
+                weight: "83g (Average)",
+                gripSizes: ["G5", "G6"],
+                stringTension: "19 - 27 lbs"
+            }
+        },
+        construction: {
+            frame: "HM Graphite, POCKETING BOOSTER",
+            shaft: "HM Graphite, Ultra PE FIBER",
+            joint: "NEW Built-in T-Joint, T-ANCHOR"
+        },
+        properties: {
+            flex: "Medium",
+            balance: "Even",
+            length: "10 mm longer"
+        },
+        stringingRecommendation: {
+            controlPlayers: "EXBOLT 63",
+            hardHitters: "EXBOLT 65"
+        },
+        manufacturing: {
+            madeIn: "Japan",
+            itemCode: "ARC7-P"
+        },
+        colors: ["Gray / Yellow"]
     }
-  },
+},
   {
     id: 50,
     name: "Yonex Astrox 77 Pro",
     price: "₹10,400",
     image: "https://www.yonex.com/media/catalog/product/a/x/ax77-p_.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Astrox Series",
+    subcategory: "Astrox",
+    model: "Pro Series",
     description: "Professional offensive racket with enhanced power and control",
     specifications: {
-      weight: "4U (83g)",
-      balance: "Head Heavy",
-      flexibility: "Stiff",
-      material: "H.M. Graphite, NANOMESH NEO"
+        weight: {
+            "4U": {
+                weight: "83g (Average)",
+                gripSizes: ["G5", "G6"],
+                stringTension: "19 - 27 lbs"
+            },
+            "3U": {
+                weight: "88g (Average)",
+                gripSizes: ["G4", "G5", "G6"],
+                stringTension: "20 - 28 lbs"
+            }
+        },
+        construction: {
+            frame: "HM Graphite, Flex Fuse, Tungsten",
+            shaft: "HM Graphite, Namd™, Ultra PE Fiber",
+            joint: "NEW Built-in T-Joint"
+        },
+        properties: {
+            flex: "Medium",
+            balance: "Head Heavy",
+            length: "10 mm longer"
+        },
+        stringingRecommendation: {
+            controlPlayers: "AEROBITE",
+            hardHitters: "EXBOLT65"
+        },
+        manufacturing: {
+            madeIn: "Japan",
+            itemCode: "AX77-P"
+        },
+        colors: ["High orange"]
     }
-  },
+},
   {
     id: 51,
     name: "Yonex Duora Strike",
     price: "₹12,200",
     image: "https://www.yonex.com/media/catalog/product/d/u/duo-zs.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Duora Series",
+    subcategory: "Duora",
+    model: "Pro",
     description: "Dual-sided racket offering unique forehand and backhand characteristics",
     specifications: {
-      weight: "4U (83g)",
-      balance: "Head Heavy",
-      flexibility: "Stiff",
-      material: "H.M. Graphite, NANOMESH NEO"
+        weight: {
+            "3U": {
+                weight: "88g (Average)",
+                gripSizes: ["G4", "G5"],
+                stringTension: "20 - 28 lbs"
+            },
+            "2U": {
+                weight: "93g (Average)",
+                gripSizes: ["G4", "G5"],
+                stringTension: "21 - 29 lbs"
+            }
+        },
+        construction: {
+            frame: "HM Graphite, NANOMETRIC DR, Hyper-MG",
+            shaft: "HM Graphite, NANOMETRIC, EX-HMG",
+            joint: "NEW Built-in T-Joint, T-ANCHOR"
+        },
+        properties: {
+            flex: "Extra Stiff",
+            balance: "Head Heavy",
+            length: "10 mm longer"
+        },
+        stringingRecommendation: {
+            controlPlayers: "AEROBITE",
+            hardHitters: "BG66 FORCE"
+        },
+        manufacturing: {
+            madeIn: "Japan",
+            itemCode: "DUO-ZS"
+        },
+        colors: ["Black / White"]
     }
-  },
+},
   {
     id: 52,
     name: "Yonex Astrox 99 Pro",
     price: "₹13,900",
     image: "https://www.yonex.com/media/catalog/product/a/x/ax99-pro_whitetiger.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Astrox Series",
+    subcategory: "Astrox",
+    model: "Pro Series",
     description: "Professional high-end racket for aggressive attacking play",
     specifications: {
-      weight: "4U (83g)",
-      balance: "Head Heavy",
-      flexibility: "Extra Stiff",
-      material: "H.M. Graphite, VOLUME CUT RESIN, NAMD"
+        weight: {
+            "4U": {
+                weight: "83g (Average)",
+                gripSizes: ["G5", "G6"],
+                stringTension: "20 - 28 lbs"
+            },
+            "3U": {
+                weight: "88g (Average)",
+                gripSizes: ["G4", "G5", "G6"],
+                stringTension: "21 - 29 lbs"
+            }
+        },
+        construction: {
+            frame: "HM Graphite, Namd, VOLUME CUT RESIN, Tungsten",
+            shaft: "HM Graphite, Namd™",
+            joint: "NEW Built-in T-Joint"
+        },
+        properties: {
+            flex: "STIFF",
+            balance: "Head Heavy",
+            length: "10 mm longer"
+        },
+        stringingRecommendation: {
+            controlPlayers: "AEROBITE",
+            hardHitters: "BG66 FORCE"
+        },
+        manufacturing: {
+            madeIn: "Japan",
+            itemCode: "AX99-P"
+        },
+        colors: ["White Tiger", "Cherry Sunburst"]
     }
-  },
+},
   {
     id: 53,
     name: "Yonex Nanoflare 1000Z",
     price: "₹15,200",
     image: "https://www.yonex.com/media/catalog/product/n/a/nanoflare_1000_z.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Nanoflare Series",
+    subcategory: "Nanoflare",
+    model: "Pro Series",
     description: "Premium professional racket optimized for speed and quick attacks",
     specifications: {
-      weight: "5U (78g)",
-      balance: "Head Light",
-      flexibility: "Stiff",
-      material: "H.M. Graphite, TORAYCA M40X, SUPER HMG"
+        weight: {
+            "4U": {
+                weight: "83g (Average)",
+                gripSizes: ["G5", "G6"],
+                stringTension: "20 - 28 lbs"
+            },
+            "3U": {
+                weight: "88g (Average)",
+                gripSizes: ["G4", "G5", "G6"],
+                stringTension: "21 - 29 lbs"
+            }
+        },
+        construction: {
+            frame: "HM Graphite, NANOMETRIC DR, M40X, EX-HYPER MG",
+            shaft: "HM Graphite, Ultra PE FIBER",
+            joint: "NEW Built-in T-Joint"
+        },
+        properties: {
+            flex: "Extra Stiff",
+            balance: "Head Light",
+            length: "10 mm longer"
+        },
+        stringingRecommendation: {
+            controlPlayers: "AEROBITE",
+            hardHitters: "EXBOLT65"
+        },
+        manufacturing: {
+            itemCode: "NF-1000Z"
+        },
+        color: "Lightning Yellow"
     }
-  },
+ },
   {
     id: 54,
     name: "Yonex Astrox 100ZZ",
     price: "₹14,900",
     image: "https://www.yonex.com/media/catalog/product/a/s/astrox100zz_kurenai.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
-    category: "Rackets",
-    subcategory: "Astrox Series",
+    category: "Rackets", 
+    subcategory: "Arcsaber",
+    model: "Pro Series",
     description: "Top-tier professional racket with maximum power and control",
     specifications: {
-      weight: "4U (83g)",
-      balance: "Head Heavy",
-      flexibility: "Extra Stiff",
-      material: "H.M. Graphite, VOLUME CUT RESIN, NAMD"
+        weight: {
+            "4U": {
+                weight: "83g (Average)",
+                gripSizes: ["G5", "G6"],
+                stringTension: "20 - 28 lbs"
+            },
+            "3U": {
+                weight: "88g (Average)",
+                gripSizes: ["G4", "G5", "G6"],
+                stringTension: "21 - 29 lbs"
+            }
+        },
+        construction: {
+            frame: "HM Graphite, Namd, Tungsten, Black Micro Core, Nanometric",
+            shaft: "HM Graphite, Namd™",
+            joint: "NEW Built-in T-Joint"
+        },
+        properties: {
+            flex: "Extra Stiff",
+            balance: "Head Heavy",
+            length: "10 mm longer"
+        },
+        stringingRecommendation: {
+            controlPlayers: "AEROBITE BOOST",
+            hardHitters: "BG66 FORCE"
+        },
+        manufacturing: {
+            madeIn: "Japan",
+            itemCode: "AX100ZZ"
+        },
+        colors: ["Kurenai", "Dark Navy"]
     }
-  },
+ },
   {
     id: 55,
     name: "Yonex Astrox 88D Pro",
     price: "₹12,900",
     image: "https://www.yonex.com/media/catalog/product/3/a/3ax88d-p_076-1_02.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Astrox Series",
+    subcategory: "Astrox",
+    model: "Pro Series",
     description: "Professional doubles-specialized racket for quick exchanges",
     specifications: {
-      weight: "4U (83g)",
-      balance: "Head Heavy",
-      flexibility: "Stiff",
-      material: "H.M. Graphite, VOLUME CUT RESIN"
+        weight: {
+            "4U": {
+                weight: "83g (Average)",
+                gripSizes: ["G5", "G6"],
+                stringTension: "20 - 28 lbs"
+            },
+            "3U": {
+                weight: "88g (Average)",
+                gripSizes: ["G4", "G5", "G6"],
+                stringTension: "21 - 29 lbs"
+            }
+        },
+        construction: {
+            frame: "HM Graphite, CFR, Tungsten",
+            shaft: "HM Graphite, 2G-Namd™ FLEX FORCE, Ultra PE Fiber",
+            joint: "NEW Built-in T-Joint"
+        },
+        properties: {
+            flex: "STIFF",
+            balance: "Head Heavy",
+            length: "10 mm longer"
+        },
+        manufacturing: {
+            madeIn: "Japan",
+            itemCode: "3AX88D-P"
+        },
+        color: "Black / Silver"
     }
-  },
+ },
   {
     id: 56,
     name: "Yonex Astrox 88S Pro",
     price: "₹12,800",
     image: "https://www.yonex.com/media/catalog/product/3/a/3ax88s-p_417-1_02.png?quality=80&fit=bounds&height=300&width=240&canvas=240:300",
     category: "Rackets",
-    subcategory: "Astrox Series",
+    subcategory: "Astrox",
+    model: "Pro Series",
     description: "Professional singles-specialized racket for powerful attacks",
     specifications: {
-      weight: "4U (83g)",
-      balance: "Head Heavy",
-      flexibility: "Stiff",
-      material: "H.M. Graphite, VOLUME CUT RESIN"
+        weight: {
+            "4U": {
+                weight: "83g (Average)",
+                gripSizes: ["G5", "G6"],
+                stringTension: "20 - 28 lbs"
+            },
+            "3U": {
+                weight: "88g (Average)",
+                gripSizes: ["G4", "G5", "G6"],
+                stringTension: "21 - 29 lbs"
+            }
+        },
+        construction: {
+            frame: "HM Graphite, CFR, Tungsten",
+            shaft: "HM Graphite, 2G-Namd™ FLEX FORCE, Ultra PE Fiber",
+            joint: "NEW Built-in T-Joint"
+        },
+        properties: {
+            flex: "STIFF",
+            balance: "Head Heavy",
+            length: "5 mm longer"
+        },
+        manufacturing: {
+            madeIn: "Japan",
+            itemCode: "3AX88S-P"
+        },
+        color: "Silver / Black"
     }
   },
   // Shoes

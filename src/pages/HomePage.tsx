@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Star, MessageCircle, Phone, Mail, MapPin, ChevronRight } from 'lucide-react';
 import { categories, products, slides, testimonials } from '../data/shopData.ts';
+import RacketCustomizer from '../components/RacketCustomizer.tsx';
+import PlayStyleMatcher from '../components/PlayStyleMatcher.tsx';
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -95,6 +97,11 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+     <section id="racket-customizer" className="py-20 bg-white">
+        <PlayStyleMatcher/>
+     </section>
+
 
       {/* Featured Products Section */}
       <section id="products" className="py-20 bg-white">

@@ -1,9 +1,8 @@
-// ProductDetails.jsx
-import React, { useState, useEffect } from 'react';
+// ProductDetails.tsx
+import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { 
   ChevronRight, 
-  ShoppingCart, 
   Shield, 
   Truck, 
   ArrowLeft,
@@ -16,7 +15,6 @@ import { products } from '../data/shopData';
 const ProductDetails = () => {
   const { productId } = useParams();
   const navigate = useNavigate();
-  const [selectedImage, setSelectedImage] = useState(0);
   const [isSpecsOpen, setIsSpecsOpen] = useState(true);
 
   // Find the current product
@@ -41,6 +39,24 @@ const ProductDetails = () => {
     window.open(whatsappUrl, '_blank');
   };
 
+  // Function to render product badges
+  const renderBadges = () => {
+    const badges = [];
+    
+    if (product.category === 'Rackets') {
+      if (product.model) badges.push(product.model);
+      if (product.subcategory) badges.push(product.subcategory);
+    } else {
+      if (product.subcategory) badges.push(product.subcategory);
+    }
+
+    return badges.map((badge, index) => (
+      <span key={index} className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-sm">
+        {badge}
+      </span>
+    ));
+  };
+
   return (
     <div className="pt-32 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,8 +71,12 @@ const ProductDetails = () => {
           </button>
           <ChevronRight className="h-4 w-4 text-gray-400" />
           <span className="text-gray-600">{product.category}</span>
-          <ChevronRight className="h-4 w-4 text-gray-400" />
-          <span className="text-gray-600">{product.subcategory}</span>
+          {product.subcategory && (
+            <>
+              <ChevronRight className="h-4 w-4 text-gray-400" />
+              <span className="text-gray-600">{product.subcategory}</span>
+            </>
+          )}
         </div>
 
         {/* Product Details */}
@@ -82,9 +102,7 @@ const ProductDetails = () => {
                 {product.name}
               </h1>
               <div className="flex items-center gap-2 mb-4">
-                <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-sm">
-                  {product.subcategory}
-                </span>
+                {renderBadges()}
                 <div className="flex items-center">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
@@ -109,13 +127,80 @@ const ProductDetails = () => {
                 <ChevronRight className={`h-5 w-5 transform transition-transform ${isSpecsOpen ? 'rotate-90' : ''}`} />
               </button>
               {isSpecsOpen && (
-                <div className="py-4 space-y-4">
-                  {Object.entries(product.specifications).map(([key, value]) => (
-                    <div key={key} className="flex">
-                      <span className="w-1/3 text-gray-600 capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}</span>
-                      <span className="w-2/3 text-gray-900">{value}</span>
+                <div className="py-4 space-y-6">
+                  {/* Weight and Grip Sizes */}
+                  {product.specifications.weight && typeof product.specifications.weight === 'object' && (
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-gray-800">Weight & Grip Sizes</h4>
+                      {Object.entries(product.specifications.weight).map(([weightClass, details]: [string, any]) => (
+                        <div key={weightClass} className="ml-4 text-sm">
+                          <p className="text-gray-700"><span className="font-medium">{weightClass}:</span> {details.weight}</p>
+                          {details.gripSizes && (
+                            <p className="text-gray-600">Grip Sizes: {details.gripSizes.join(', ')}</p>
+                          )}
+                          {details.stringTension && (
+                            <p className="text-gray-600">Recommended Tension: {details.stringTension}</p>
+                          )}
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  )}
+
+                  {/* Construction */}
+                  {product.specifications.construction && (
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-gray-800">Construction</h4>
+                      {Object.entries(product.specifications.construction).map(([part, material]) => (
+                        <div key={part} className="ml-4">
+                          <p className="text-gray-700">
+                            <span className="font-medium capitalize">{part}:</span> {material}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Properties */}
+                  {product.specifications.properties && (
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-gray-800">Properties</h4>
+                      {Object.entries(product.specifications.properties).map(([property, value]) => (
+                        <div key={property} className="ml-4">
+                          <p className="text-gray-700">
+                            <span className="font-medium capitalize">{property}:</span> {value}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Stringing Recommendations */}
+                  {product.specifications.stringingRecommendation && (
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-gray-800">String Recommendations</h4>
+                      {Object.entries(product.specifications.stringingRecommendation).map(([playerType, string]) => (
+                        <div key={playerType} className="ml-4">
+                          <p className="text-gray-700">
+                            <span className="font-medium capitalize">
+                              {playerType.replace(/([A-Z])/g, ' $1').trim()}:
+                            </span> {string}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Legacy specifications format support */}
+                  {product.specifications.weight && typeof product.specifications.weight === 'string' && (
+                    Object.entries(product.specifications).map(([key, value]) => (
+                      <div key={key} className="flex">
+                        <span className="w-1/3 text-gray-600 capitalize">
+                          {key.replace(/([A-Z])/g, ' $1').trim()}
+                        </span>
+                        <span className="w-2/3 text-gray-900">{value as string}</span>
+                      </div>
+                    ))
+                  )}
                 </div>
               )}
             </div>
@@ -147,16 +232,12 @@ const ProductDetails = () => {
                 <MessageCircle className="h-5 w-5" />
                 Buy on WhatsApp
               </button>
-              {/* <button className="w-full flex items-center justify-center gap-2 border-2 border-teal-600 text-teal-600 py-4 px-6 rounded-lg hover:bg-teal-50 transition duration-300">
-                <ShoppingCart className="h-5 w-5" />
-                Add to Cart
-              </button> */}
             </div>
           </div>
         </div>
 
-        {/* Related Products reserved for future 
-        {relatedProducts.length > 0 && (
+        {/* Related Products */}
+        {/* {relatedProducts.length > 0 && (
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Products</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
